@@ -294,6 +294,18 @@ var map = AmCharts.makeChart( "chartdiv", {
     "map": "worldLow",
 
     "lines": [ {
+      "id": "line",
+      "arc": -0.35,
+      "alpha": 0.3,
+      "latitudes": [ 23, 43.8163 ],
+      "longitudes": [ -82, -79.4287 ]
+    },{
+      "id": "line0",
+      "arc": -0.35,
+      "alpha": 0.3,
+      "latitudes": [ 52, 43.8163 ],
+      "longitudes": [ 4, -79.4287 ]
+    },{
       "id": "line1",
       "arc": -0.85,
       "alpha": 0.3,
@@ -301,11 +313,47 @@ var map = AmCharts.makeChart( "chartdiv", {
       "longitudes": [ 4, 28 ]
     }, {
       "id": "line2",
-      "alpha": 0,
-      "color": "#000000",
-      "latitudes": [ 52, 41 ],
-      "longitudes": [ 4, 28 ]
-    } ],
+      "arc": 0.45,
+      "alpha": 0.3,
+      "latitudes": [ 41, 23 ],
+      "longitudes": [ 28, -82 ]
+    }, {
+      "id": "line3",
+      "arc": 0.45,
+      "alpha": 0.3,
+      "latitudes": [ 41, 34 ],
+      "longitudes": [ 28, -118 ]
+    }, {
+      "id": "line4",
+      "arc": 0.45,
+      "alpha": 0.3,
+      "latitudes": [ 23, 34 ],
+      "longitudes": [ -82, -118 ]
+    },{
+      "id": "line6",
+      "arc": 0.79,
+      "alpha": 0.3,
+      "latitudes": [ -33, 34 ],
+      "longitudes": [ 151, -118 ]
+    }, {
+      "id": "line5",
+      "arc": -0.45,
+      "alpha": 0.3,
+      "latitudes": [ 43.8163, 34 ],
+      "longitudes": [ -79.4287, -118 ]
+    }, {
+      "id": "line7",
+      "arc": 0.45,
+      "alpha": 0.3,
+      "latitudes": [ 23, 13.7 ],
+      "longitudes": [ -82, 100.5 ]
+    }, {
+      "id": "line8",
+      "arc": -0.75,
+      "alpha": 0.3,
+      "latitudes": [ 52, 13.7 ],
+      "longitudes": [ 4, 100.5 ]
+    }],
     "images": [ {
       "svgPath": targetSVG,
       "title": "Toronto",
@@ -321,6 +369,16 @@ var map = AmCharts.makeChart( "chartdiv", {
       "title": "Havana",
       "latitude": 23,
       "longitude": -82
+    }, {
+      "svgPath": targetSVG,
+      "title": "Bangkok",
+      "latitude": 13.7,
+      "longitude": 100.5
+    }, {
+      "svgPath": targetSVG,
+      "title": "Sydney",
+      "latitude": -33.86,
+      "longitude": 151
     },{
       "svgPath": targetSVG,
       "title": "Istanbul",
@@ -334,10 +392,29 @@ var map = AmCharts.makeChart( "chartdiv", {
     }, {
       "svgPath": planeSVG,
       "positionOnLine": 0,
-      "color": "#000000",
-      "alpha": 0.1,
+      "color": "#585869",
       "animateAlongLine": true,
       "lineId": "line2",
+      "flipDirection": true,
+      "loop": true,
+      "scale": 0.03,
+      "positionScale": 1.3
+    }, {
+      "svgPath": planeSVG,
+      "positionOnLine": 0,
+      "color": "#585869",
+      "animateAlongLine": true,
+      "lineId": "line4",
+      "flipDirection": true,
+      "loop": true,
+      "scale": 0.03,
+      "positionScale": 1.3
+    }, {
+      "svgPath": planeSVG,
+      "positionOnLine": 0,
+      "color": "#585869",
+      "animateAlongLine": true,
+      "lineId": "line3",
       "flipDirection": true,
       "loop": true,
       "scale": 0.03,
@@ -352,6 +429,66 @@ var map = AmCharts.makeChart( "chartdiv", {
       "loop": true,
       "scale": 0.03,
       "positionScale": 1.8
+    }, {
+      "svgPath": planeSVG,
+      "positionOnLine": 1,
+      "color": "#585869",
+      "animateAlongLine": true,
+      "lineId": "line5",
+      "flipDirection": true,
+      "loop": true,
+      "scale": 0.02,
+      "positionScale": 1.8
+    }, {
+      "svgPath": planeSVG,
+      "positionOnLine": 1,
+      "color": "#585869",
+      "animateAlongLine": true,
+      "lineId": "line0",
+      "flipDirection": true,
+      "loop": true,
+      "scale": 0.02,
+      "positionScale": 1.8
+    }, {
+      "svgPath": planeSVG,
+      "positionOnLine": 1,
+      "color": "#585869",
+      "animateAlongLine": true,
+      "lineId": "line",
+      "flipDirection": true,
+      "loop": true,
+      "scale": 0.02,
+      "positionScale": 1.8
+    }, {
+      "svgPath": planeSVG,
+      "positionOnLine": 1,
+      "color": "#585869",
+      "animateAlongLine": true,
+      "lineId": "line6",
+      "flipDirection": true,
+      "loop": true,
+      "scale": 0.04,
+      "positionScale": 2
+    }, {
+      "svgPath": planeSVG,
+      "positionOnLine": 1,
+      "color": "#585869",
+      "animateAlongLine": true,
+      "lineId": "line7",
+      "flipDirection": true,
+      "loop": true,
+      "scale": 0.04,
+      "positionScale": 2
+    }, {
+      "svgPath": planeSVG,
+      "positionOnLine": 1,
+      "color": "#585869",
+      "animateAlongLine": true,
+      "lineId": "line8",
+      "flipDirection": true,
+      "loop": true,
+      "scale": 0.03,
+      "positionScale": 2
     } ]
   },
 
